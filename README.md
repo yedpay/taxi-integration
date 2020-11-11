@@ -38,17 +38,25 @@ Create instance of Taxi
 
 Input parameters
 
-	String apiKey = "";		// Get from getApiKey()
-	String storeId = ""; 	// Get from getApiKey()
+	// Get from getApiKey()
+	String apiKey = "";
+	// Get from getApiKey()
+	String storeId = "";
 	float amount = 0.2f;
+	
 	
 	Response response = taxi.createPaymentQRCode(apiKey, storeId, amount);
 
+
 * Example Query Transaction List
 
-	String apiKey = "";				// Get from getApiKey()
-	String emvCodeId = "";			// Get from createPaymentQRCode()
-	String paymentCreateTime = "";	// Create from createPaymentQRCode(), format "yyyy-MM-dd HH:mm:ss"
+	// Get from getApiKey()
+	String apiKey = "";
+	// Get from createPaymentQRCode()	
+	String emvCodeId = "";
+	// Create from createPaymentQRCode(), format "yyyy-MM-dd HH:mm:ss"
+	String paymentCreateTime = "";	
+	
 	
 	Response response = taxi.queryTransactionList(apiKey, emvCodeId, paymentCreateTime);
 	
