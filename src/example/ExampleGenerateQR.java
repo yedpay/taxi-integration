@@ -18,7 +18,7 @@ public class ExampleGenerateQR {
     public static void main(String[] args) {
         Taxi taxi = new Taxi("dev", DEVICE_ID, SECRET_KEY);
         
-        String qrString = taxi.generateQRString();
+        String qrString = taxi.getQRString();
         System.out.println(qrString);
     }
 }

@@ -27,14 +27,17 @@ public class Taxi {
     private String environment;
     private byte[] randomBytes;
     private String sessionKey = "";
+    private String qrCode = "";
     
     public Taxi(String environment, String deviceId, String secretKey) {
         this.environment = environment;
         this.deviceId = deviceId;
         this.secretKey = secretKey;
+        
+        generateQRString();
     }
     
-    public String generateQRString() {
+    public void generateQRString() {
         SecureRandom random = new SecureRandom();
         randomBytes = new byte[32];
         random.nextBytes(randomBytes);
@@ -58,11 +61,14 @@ public class Taxi {
             qrJson.addProperty("session_key", sessionKey);
             qrJson.addProperty("sign", sign);
 
-            return qrJson.toString();
+            qrCode =  qrJson.toString();
         } catch (Exception e) {
             e.printStackTrace();
-            return "";
         }
+    }
+    
+    public String getQRString() {
+        return qrCode;
     }
   
     public String getSessionKey() {

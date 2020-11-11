@@ -5,6 +5,7 @@
  */
 package example;
 
+import yedpay.Constant;
 import yedpay.integration.Taxi;
 
 /**
@@ -16,7 +17,7 @@ public class ExampleTaxiIntegration {
     private static final String SECRET_KEY = "4fddf45f81e1b276c4fd21f6147ca3ddcd945b0d72165ed8ef906b64c51d100e";
 
     public static void main(String[] args) {
-        Taxi taxi = new Taxi("dev", DEVICE_ID, SECRET_KEY);
+        Taxi taxi = new Taxi(Constant.DEV, DEVICE_ID, SECRET_KEY);
         
         taxi.generateQRString();
     }

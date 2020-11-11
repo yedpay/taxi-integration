@@ -47,7 +47,7 @@ public class TaxiTest {
      */
     @Test
     public void testGenerateQRString() {
-        String result = taxi.generateQRString();
+        String result = taxi.getQRString();
         assertTrue(!result.isEmpty());
     }
     
