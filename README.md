@@ -14,8 +14,8 @@ A Java library for Taxi to integrate Yedpay
 | Parameter | Type | Description |
 | --- | --- | --- |
 | environment | String | Environment ( 'dev' or 'staging' or 'production' )|
-| device id | String | |
-| secret key | String | |
+| device id | String | Contact Yedpay to get Device ID|
+| secret key | String | Contact Yedpay to get Secret Key|
 
 Input parameters
 
