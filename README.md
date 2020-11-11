@@ -28,10 +28,12 @@ Create instance of Taxi
 	
 * Example Get QR String
 
+get QR string
 	String result = taxi.getQRString();
 	
 * Example Get API Key
 
+Get api key
 	Response response = taxi.getApiKey();
 	
 * Example Create Payment QR Code
@@ -45,10 +47,13 @@ Input parameters
 	float amount = 0.2f;
 	
 	
+Create payment QR code
 	Response response = taxi.createPaymentQRCode(apiKey, storeId, amount);
 
 
 * Example Query Transaction List
+
+Input parameters
 
 	// Get from getApiKey()
 	String apiKey = "";
@@ -58,5 +63,7 @@ Input parameters
 	String paymentCreateTime = "";	
 	
 	
+Query transaction list
+
 	Response response = taxi.queryTransactionList(apiKey, emvCodeId, paymentCreateTime);
 	
