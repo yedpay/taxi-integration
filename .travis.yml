@@ -1,9 +1,9 @@
 language: java
 sudo: false
 
-# Tell Travis CI to monitor only 'main' branch
+# Tell Travis CI to monitor only 'master' branch
 branches:
-  only: main
+  only: master
   
 before_script:
   - sudo apt-get install ant-optional
