@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/yedpay/taxi-integration.svg?branch=main)](https://travis-ci.org/yedpay/taxi-integration)
 
 # Yedpay Taxi Integration Library
 
