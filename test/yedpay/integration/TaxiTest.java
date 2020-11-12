@@ -10,6 +10,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.mockito.InjectMocks;
+import yedpay.Constant;
 import yedpay.response.Response;
 import yedpay.response.Error;
 import yedpay.response.Success;
@@ -33,7 +34,7 @@ public class TaxiTest {
         DEVICE_ID = "VXPKRVJR84MZ";
         SECRET_KEY = "4fddf45f81e1b276c4fd21f6147ca3ddcd945b0d72165ed8ef906b64c51d100e";
         
-        taxi = new Taxi("dev", DEVICE_ID, SECRET_KEY);
+        taxi = new Taxi(Constant.STAGING, DEVICE_ID, SECRET_KEY);
     }
     
     @AfterClass
