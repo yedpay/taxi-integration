@@ -5,8 +5,6 @@
  */
 package example;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import yedpay.integration.Taxi;
 import yedpay.response.Response;
 import yedpay.response.Success;
