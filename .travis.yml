@@ -1,5 +1,12 @@
 language: java
+sudo: false
 
 # Tell Travis CI to monitor only 'main' branch
 branches:
   only: main
+  
+before_script:
+  - sudo apt-get install ant-optional
+  
+after_success:
+  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
