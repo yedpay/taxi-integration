@@ -14,7 +14,7 @@ A Java library for Taxi to integrate Yedpay
 #### Initialize taxi integration class
 | Parameter | Type | Description |
 | --- | --- | --- |
-| environment | String | Environment ( 'dev' or 'staging' or 'production' )|
+| environment | String | Environment ( 'staging' or 'production' )|
 | device id | String | Contact Yedpay to get Device ID|
 | secret key | String | Contact Yedpay to get Secret Key|
 
@@ -25,7 +25,7 @@ Input parameters
 
 Create instance of Taxi
 
-	Taxi taxi = new Taxi(Constant.DEV, DEVICE_ID, SECRET_KEY);
+	Taxi taxi = new Taxi(Constant.STAGING, DEVICE_ID, SECRET_KEY);
 	
 * Example Get QR String
 
