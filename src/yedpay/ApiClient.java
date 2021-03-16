@@ -103,6 +103,7 @@ public class ApiClient {
             parameter.put("include", "store");
             created_at = created_at == null? "":created_at.trim().replace(" ", "%20");
             parameter.put("created_at>", created_at);
+            parameter.put("status", "paid");
             
             Response response = httpTask.execute(Constant.GET, path, parameter);
             return response;
