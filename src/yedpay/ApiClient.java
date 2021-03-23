@@ -101,7 +101,7 @@ public class ApiClient {
         try {
             HashMap<String, String> parameter = new HashMap<>();
             parameter.put("include", "store");
-            created_at = created_at == null? "":created_at.trim().replace(" ", "%20");
+//            created_at = created_at == null? "":created_at.trim().replace(" ", "%20");
             parameter.put("created_at>", created_at);
             parameter.put("status", "paid");
             
